@@ -1,0 +1,21 @@
+{
+  "name": "neranjana-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "marked": "^3.0.4",
+    "next": "^11.1.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "sass": "^1.42.1",
+    "scss": "^0.2.4"
+  },
+  "keywords": [],
+  "description": ""
+}

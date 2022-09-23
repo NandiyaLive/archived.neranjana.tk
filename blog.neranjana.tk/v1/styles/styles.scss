@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: tomato;
+}
+
+body {
+  font-family: 'Inter', serif;
+  font-weight: 300;
+  background-color: #1c1e22;
+  color: white;
+  padding: 20px 0;
+  max-height: 100vh;
+  transition: 0.3s;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 25px;
+  overflow: auto;
+}
+
+.intro {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid tomato;
+    padding: 3px;
+  }
+}
+
+.posts {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 25px;
+
+  .recent-posts-title {
+    font-weight: 500;
+    padding: 10px 0;
+  }
+  .post-list {
+    line-height: 40px;
+
+    .post-date {
+      min-width: 90px;
+    }
+
+    li {
+      border-bottom: 1px solid #d5d5d5;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.post-page {
+  padding-top: -20px;
+  overflow-y: auto;
+
+  .post-container {
+    margin: 0 auto;
+    max-width: 850px;
+    padding: 20px 10px 0 10px;
+    line-height: 26px;
+
+    .back-btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: -30px;
+      padding-left: 10px;
+
+      svg {
+        fill: white;
+        height: 18px;
+        margin-top: -2px;
+      }
+    }
+  }
+
+  section.hero {
+    height: 70vh;
+    background-size: cover;
+    margin-top: 0;
+  }
+  .hero-body {
+    position: relative;
+    top: 350px;
+    left: 5vw;
+
+    .post-title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .date-author {
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+
+  .comments {
+    margin: 0 auto;
+    max-width: 850px;
+    padding: 10px 15px 0 15px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+footer {
+  padding-top: 40px;
+  text-align: center;
+  line-height: 17px;
+
+  p {
+    font-size: 12px;
+  }
+
+  a, a:hover {
+    color: var(--main-color);
+    font-weight: 500;
+  }
+
+  svg {
+    fill: crimson;
+    height: 10px;
+  }
+}
+
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:600px) {
+  body {
+    overflow: auto;
+  }
+
+  section.intro {
+    flex-direction: column;
+  }  
+}
