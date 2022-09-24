@@ -7,7 +7,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 
 const Model = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/model.glb");
+  const { nodes, materials, animations } = useGLTF("https://api.readyplayer.me/v1/avatars/61c1b505d8df61381f393a01.glb");
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
     actions["Armature|mixamo.com|Layer0"].play();
